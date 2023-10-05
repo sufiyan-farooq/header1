@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background-color: #22242A;
+  }
+  .nav {
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-title img{
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+  }
+.nav-btn label{
+    color: #000;
+}
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #000;
+  }
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+
+  }
+  .nav > .nav-list > li a:hover{
+ color: rgb(215, 29, 29);
+  }
+  .nav > #nav-check {
+      display: none;
+
+  }
+
+  .nav-list li{
+    padding-top: 25px;
+  }
+  
+
+
+
+  @media (max-width: 480px) {
+    .nav {
+      padding: 1rem;
+    }
+    .nav-title img{
+        width: 80px;
+        height: 80px;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-top: 0.2rem;
+    }
+    .nav > .nav-list > li a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    
+      }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      padding-top: 40px;
+
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #ffffff;
+      ;
+      
+
+
+    }
+    .nav-title img{
+      width: 160px;
+      height: 160px;
+      margin-top: 60px;
+    
+    }
+    .nav > .nav-list {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      height: 0;
+      transition: all 0.3s ease-in;
+      top: 100px;
+      right: 0;
+      overflow: hidden;
+      background-color:#a01212;
+    
+
+      width: 200px;
+
+    }
+    .nav > .nav-list > li {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+    .nav > #nav-check:checked ~ .nav-list {
+      height: calc(100vh - 50px);
+    }
+  
+  }
+
+  .title-head h2{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+font-weight: 300;
+  }
+  .title-head span{
+    font-weight: 900;
+  }
+  .Title-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .Title-button button{
+    background: linear-gradient(to bottom right, #CC2B5E, #b91717);
+    border: 0;
+    border-radius: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }
+  
+  .Title-button button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #cc2b2b, .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .Title-button button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #cc302b, .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+  }
+    .about-engine{
+      margin-top: 120px;
+    }
+
+  .engine p{
+    color: #b91717;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .hp p{
+color: white;
+font-weight: 700;
+font-size: 20px;
+  }
+  .kmpl p{
+    color: #FFFFFF;
+  }
+  .social{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .social-icon img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+  .dot img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }  @media screen and (max-width:820px) {
+    .car-image img{
+      width: 500px;
+     margin-top: 120px; 
+    }
+ .title-head h2{
+  font-size: 40px;
+ }
+  }
+
+
+  @media screen and (max-width:480px) {
+    .main{
+      display: block;
+    }
+
+    .title-head h2{
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    .Title-button button{
+      font-size: 12px;
+      margin-top: 50px;
+    }
+    .car-image img{
+      width: 350px;
+      margin-top: 80px;
+      margin-left: 15px;
+    }
+    .about-engine{
+      text-align: center;
+    }
+  }
+
